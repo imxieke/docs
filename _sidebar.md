@@ -6,21 +6,23 @@
   - [Linux](docs/awesome/linux.md)
   - [Windows](docs/awesome/windows.md)
   - [HomeBrew](docs/awesome/homebrew.md)
-  - [网络工具](docs/awesome/network.md)
   - [编辑器 && IDE](docs/awesome/editor.md)
+  - [网络工具](docs/awesome/network.md)
   - [Git 服务端](docs/awesome/git-server.md)
 
 - 编程语言
-  - [Composer](docs/components/composer.md)
+  - [PHP Extensions](docs/program/php-exts.md)
+  - [Bash](docs/components/bash.md)
 
 - 工具
   - [Adblock](docs/tools/adblock.md)
+  - [Composer](docs/tools/composer.md)
   - [Crontab](docs/tools/crontab.md)
   - [Grub](docs/tools/grub.md)
   - [OpenSSL](docs/tools/openssl.md)
   - [Podman](docs/tools/podman.md)
   - [Regex](docs/tools/regex.md)
-  - [Regex](docs/tools/rsync.md)
+  - [Rsync](docs/tools/rsync.md)
   - [VSCode](docs/tools/vscode.md)
   - [Wget](docs/tools/wget.md)
   - [WSL](docs/tools/wsl.md)

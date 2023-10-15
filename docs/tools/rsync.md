@@ -19,7 +19,7 @@ rsync --archive --verbose --compress --recursive --times --perms
 ## 参数
 - `--remove-source-files` 	删除源文件当传输完成
 - `--delete` 				将删除只存在于目标目录、不存在于源目录的文件
-- --exclude 排除指定文件
+- `--exclude` 排除指定文件
   - 下面是几个示例
   - `--exclude '*.txt'`
   - `--exclude 'file1.txt' --exclude 'dir1/*'`
