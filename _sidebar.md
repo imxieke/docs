@@ -6,9 +6,11 @@
   - [Linux](docs/awesome/linux.md)
   - [Windows](docs/awesome/windows.md)
   - [HomeBrew](docs/awesome/homebrew.md)
+  - [前端](docs/awesome/frontend.md)
   - [编辑器 && IDE](docs/awesome/editor.md)
   - [网络工具](docs/awesome/network.md)
   - [Git 服务端](docs/awesome/git-server.md)
+  - [静态站点生成器](docs/awesome/static-site-generator.md)
 
 - 编程语言
   - [PHP Extensions](docs/program/php-exts.md)
