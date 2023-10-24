@@ -6,7 +6,6 @@ net.ipv6.conf.default.disable_ipv6=1
 net.ipv6.conf.lo.disable_ipv6=1
 ```
 
-
 执行 `sysctl -p` 生效
 
 ## 从 Ubuntu 20.04 升级到 22.04 (通用)
@@ -80,3 +79,78 @@ apt autoremove -y
 `ps -eo pid,ppid,ruser,euser,%mem,%cpu,cmd --sort=-%cpu | head -n 30`
 ## 查看内存使用 Top
 `ps -eo pid,ppid,ruser,euser,%mem,%cpu,cmd --sort=-%mem | head -n 30`
+
+## tcp复用解决方案
+### 修改sysctl.conf
+```ini
+net.ipv4.tcp_syncookies = 1
+net.ipv4.tcp_timestamps=1
+net.ipv4.tcp_tw_reuse=1
+net.ipv4.tcp_tw_recycle=1
+net.ipv4.tcp_fin_timeout=30
+net.ipv4.tcp_keepalive_time = 600
+```
+
+## 设置sockets连接参数
+
+`/etc/sysctl.conf`
+
+# 配置参考
+```ini
+net.ipv4.tcp_tw_reuse = 1
+net.ipv4.tcp_tw_recycle = 0
+net.ipv4.ip_local_port_range = 1024 65000
+net.ipv4.tcp_mem = 786432 2097152 3145728
+net.ipv4.tcp_rmem = 4096 4096 16777216
+net.ipv4.tcp_wmem = 4096 4096 16777216
+```
+## 修改配置以后使得配置生效命令
+`sysctl -p`
+
+## 查看连接数
+netstat -n |  wc -l # 总连接数
+netstat -n | grep -i time_wait | wc -l # time_wait 连接数
+netstat -anp # 查看占用端口过多的程序
+
+## 文件打开句柄数
+### 查看系统默认的值
+ulimit -n 查看默认打开文件数
+# 设置最大打开文件数 仅在终端临时生效
+ulimit -n 1000000
+
+## 永久生效修改配置文件 需重启
+`/etc/security/limits.conf`
+```
+root soft nofile 1040000
+root hard nofile 1040000
+
+root soft nofile 1040000
+root hard nproc 1040000
+
+root soft core unlimited
+root hard core unlimited
+
+* soft nofile 1040000
+* hard nofile 1040000
+
+* soft nofile 1040000
+* hard nproc 1040000
+
+* soft core unlimited
+* hard core unlimited
+```
+
+## 修改系统级别文件句柄数量
+- file-max的值需要大于limits设置的值
+```
+# 查看 file-max 设置的值
+cat /proc/sys/fs/file-max
+12553500
+```
+
+修改文件/etc/sysctl.conf，文件末尾加入配置内容：
+
+# vim /etc/sysctl.conf
+`fs.file-max = 2000000`
+然后执行命令，使修改配置立即生效：
+`sysctl -p`

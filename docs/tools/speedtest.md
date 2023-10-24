@@ -1,0 +1,35 @@
+# Speedtest
+- Anycast
+    - http://cachefly.cachefly.net/100mb.test
+- US
+    - 堪萨斯
+        - http://lg.us.hostigger.com/100MB.test
+    - Las Vegas
+        - https://speedtest.lv.buyvm.net/100MB.test
+    - NewYork
+        - https://speedtest.ny.buyvm.net/100MB.test
+- 土耳其
+    - http://lg.tr.hostigger.com/100MB.test
+- 荷兰
+    - http://lg.nl.hostigger.com/100MB.test
+- 英国
+    - https://lg.uk1.hostgnome.com/static/1000MB.test
+    
+- Europe
+    - Luxembourg
+        - https://speedtest.lu.buyvm.net/100MB.test
+        - Chicago: http://172.107.196.100/200MB.test
+        - London: http://45.91.93.250/100MB.test
+        - Zurich: http://185.9.18.186/1000mb.bin
+
+- Other
+    - http://155.94.235.4/1gb.bin
+    - http://204.44.98.145/100MB.bin
+    - http://la2-speedtest.hostyun.com
+    - https://la5-speedtest.hostyun.com
+    - https://iij-speedtest.hostyun.com
+    - https://sb-speedtest.hostyun.com
+    - https://la7-speedtest.hostyun.com
+    - https://la4-speedtest.hostyun.com
+    - http://kr-speedtest.hostyun.com
+    - https://la4-speedtest.hostyun.com
