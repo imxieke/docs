@@ -10,6 +10,7 @@
   - [前端](docs/awesome/frontend.md)
   - [编辑器 && IDE](docs/awesome/editor.md)
   - [网络工具](docs/awesome/network.md)
+  - [文件同步](docs/awesome/file-sync.md)
   - [rootfs](docs/awesome/rootfs.md)
   - [自托管工具](docs/awesome/self-hosted.md)
   - [WPS](docs/awesome/wps.md)
@@ -56,4 +57,4 @@
   - [Ubuntu](docs/os/ubuntu.md)
   - [Alpine](docs/os/alpine.md)
   - [Deepin](docs/os/deepin.md)
-  - [macOS](docs/os/macOS.md)
+  - [macOS](docs/os/macos.md)
