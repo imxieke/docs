@@ -14,7 +14,6 @@
   - [rootfs](docs/awesome/rootfs.md)
   - [自托管工具](docs/awesome/self-hosted.md)
   - [WPS](docs/awesome/wps.md)
-  - [Git 服务端](docs/awesome/git-server.md)
   - [静态站点生成器](docs/awesome/static-site-generator.md)
 
 - 编程语言
