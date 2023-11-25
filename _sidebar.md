@@ -14,18 +14,29 @@
   - [rootfs](docs/awesome/rootfs.md)
   - [自托管工具](docs/awesome/self-hosted.md)
   - [WPS](docs/awesome/wps.md)
+  - [DNS 服务端](docs/awesome/dns-server.md)
   - [静态站点生成器](docs/awesome/static-site-generator.md)
+  - [区块链](docs/awesome/blockchain.md)
+  - [缓存](docs/awesome/cache.md)
+
+
+- 数据库
+  - [MYSQL](docs/databases/mysql.md)
 
 - 编程语言
   - [PHP Extensions](docs/program/php-exts.md)
   - [Bash](docs/components/bash.md)
-  - [Bash](docs/program/thinkphp.md)
+  - [ThinkPHP](docs/program/thinkphp.md)
+  - [HTML](docs/program/html.md)
+  - [HTML](docs/program/css.md)
+  - [Javascript](docs/program/javascript.md)
 
 - 工具
   - [Adblock](docs/tools/adblock.md)
   - [Composer](docs/tools/composer.md)
   - [Crontab](docs/tools/crontab.md)
   - [公共 DNS](docs/tools/dns.md)
+  - [部署](docs/tools/deploy.md)
   - [Docker](docs/tools/docker.md)
   - [Docker Compose](docs/tools/docker-compose.md)
   - [防火墙](docs/tools/firewall.md)
@@ -33,10 +44,12 @@
   - [GCC](docs/tools/gcc.md)
   - [Git](docs/tools/git.md)
   - [Gnupg](docs/tools/gnupg.md)
+  - [Homebrew](docs/tools/brew.md)
   - [KDE](docs/tools/kde.md)
   - [Markdown 语法](docs/tools/markdown-syntax.md)
   - [OpenSSL](docs/tools/openssl.md)
   - [Podman](docs/tools/podman.md)
+  - [Proxy](docs/tools/proxy-client.md)
   - [Raid](docs/tools/raid.md)
   - [Redis](docs/tools/redis.md)
   - [Regex](docs/tools/regex.md)
