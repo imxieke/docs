@@ -1,5 +1,44 @@
 # Docker
 
+
+## Dockerd
+```conf
+[Service]
+Environment="HTTP_PROXY=http://192.168.13.189:7890"
+Environment="HTTPS_PROXY=http://192.168.13.189:7890"
+Environment="NO_PROXY=localhost,127.0.0.1,.example.com"
+```
+
+## Container
+## ~/.docker/config.json
+
+```json
+{
+ "proxies":
+ {
+   "default":
+   {
+     "httpProxy": "http://192.168.13.189:7890",
+     "httpsProxy": "http://192.168.13.189:7890",
+     "noProxy": "localhost,127.0.0.1,.example.com"
+   }
+ }
+```
+
+## Build
+``` bash
+docker build . \
+    --build-arg "HTTP_PROXY=http://proxy.example.com:8080/" \
+    --build-arg "HTTPS_PROXY=http://proxy.example.com:8080/" \
+    --build-arg "NO_PROXY=localhost,127.0.0.1,.example.com" \
+    -t your/image:tag
+```
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
 ## Set Mirrors
 ### 检查 `docker.service` 是否已经配置
 `systemctl cat docker | grep '\--registry-mirror'`
@@ -63,31 +102,31 @@ Refer link: http://www.tuicool.com/articles/e2YrE3j
 >Command list and introduction
 
  1. FROM        指定Container base image 来源
- 2. MAINTAINER: 维护者&作者<MAINTAINER Mail> 
- 3. RUN         Linux Command 
- 4. ENV         设置环境变量。 
+ 2. MAINTAINER: 维护者&作者<MAINTAINER Mail>
+ 3. RUN         Linux Command
+ 4. ENV         设置环境变量。
  5. EXPOSE      暴露端口
  6. ADD         添加文件至Container内
  7. COPY        复制本地主机的 <src> （为Dockerfile所在目录的相对路径）到容器中的 <dest>
  8. VOLUME      挂载Volume 持久化存储文件
  9. ENTRYPOINT  Dockerfile仅可指定一个ENTRYPOINT，若指定多个，仅一个有效
- 10. CMD         镜像构建容器后被调用。 
+ 10. CMD         镜像构建容器后被调用。
  11. WORKDIR    WORKDIR命令用于设置CMD指明的命令的运行目录。
  12. ONBUILD    配置当所创建的镜像作为其它新创建镜像的基础镜像时，所执行的操作指令。
 
 
-PS:RUN先于CMD/ENTRYPOINTRUN命令覆盖CMD 
+PS:RUN先于CMD/ENTRYPOINTRUN命令覆盖CMD
 例：CMD["echo"] 而docker run CONTAINER_NAME echo foo则会运行echo foo，
 而忽略CMD 而ENTRYPOINT则会传递RUN命令，
-例：ENTRYPOINT ["echo"]docker run CONTAINER_NAME echo foo则会运行echo echo foo 输出为echo foo 
+例：ENTRYPOINT ["echo"]docker run CONTAINER_NAME echo foo则会运行echo echo foo 输出为echo foo
 
 *****************************************************************
 
 
 >Introduction Command  usage and example;
-### FROM 
+### FROM
 
-    用法：ubuntu/xenial:tag (daocloud.io/library:ubuntu or tag) 
+    用法：ubuntu/xenial:tag (daocloud.io/library:ubuntu or tag)
 
 ### MAINTAINER
 
@@ -121,7 +160,7 @@ PS:RUN先于CMD/ENTRYPOINTRUN命令覆盖CMD
     #usage COPY src /destination
     COPY index.php /var/www/html
 
-    
+
 
 ### USER
 
@@ -136,7 +175,7 @@ PS:RUN先于CMD/ENTRYPOINTRUN命令覆盖CMD
     #usage VOLUME ["<mountpoint>"]
     如:`VOLUME ["/data"]`
     创建一个挂载点用于共享目录
-    
+
 ## WORKDIR
 
     #usage WORKDIR /path/to/workdir

@@ -1,4 +1,11 @@
-## Composer
+## Composer 使用文档
+
+### Mirrors list
+```
+https://mirrors.huaweicloud.com/repository/php/
+https://mirrors.cloud.tencent.com/composer/ mirrors.tencentyun.com(内网)
+https://mirrors.aliyun.com/composer/
+```
 
 ### Documents
 
@@ -26,13 +33,6 @@ composer config -g --unset repos.packagist
 composer 命令增加 -vvv 可输出详细的信息，命令如下：
 
 composer -vvv require alibabacloud/sdk
-
-### Mirrors list
-```
-https://mirrors.huaweicloud.com/repository/php/
-https://mirrors.cloud.tencent.com/composer/ mirrors.tencentyun.com(内网)
-https://mirrors.aliyun.com/composer/
-```
 
 
 ## 版本信息

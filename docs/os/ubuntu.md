@@ -154,3 +154,7 @@ cat /proc/sys/fs/file-max
 `fs.file-max = 2000000`
 然后执行命令，使修改配置立即生效：
 `sysctl -p`
+
+
+# Systemd 自启会创建如下文件
+/etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service

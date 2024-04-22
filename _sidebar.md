@@ -2,6 +2,8 @@
   - [快速开始](README.md)
 
 - Awesome
+  - [个人习惯](docs/awesome/person.md)
+  - [AI Chat GUI](docs/awesome/chat-ui.md)
   - [macOS](docs/awesome/macos.md)
   - [Linux](docs/awesome/linux.md)
   - [Windows](docs/awesome/windows.md)
@@ -18,20 +20,47 @@
   - [静态站点生成器](docs/awesome/static-site-generator.md)
   - [区块链](docs/awesome/blockchain.md)
   - [缓存](docs/awesome/cache.md)
+  - [Web IDE](docs/awesome/webide.md)
+  - [代码托管](docs/awesome/git.md)
+  - [CI & CD](docs/awesome/cicd.md)
+  - [OA](docs/awesome/oa.md)
+  - [在线文档](docs/awesome/docs.md)
+  - [RSS 订阅](docs/awesome/rss.md)
+  - [文件同步](docs/awesome/sync.md)
+  - [远程](docs/awesome/remote.md)
+  - [源码推荐](docs/awesome/code.md)
+  - [短网址](docs/awesome/shorturl.md)
+  - [安全](docs/awesome/security.md)
 
+- Web
+  - [Nginx](docs/web/nginx.md)
 
 - 数据库
   - [MYSQL](docs/databases/mysql.md)
 
-- 编程语言
+- 前端
+  - [Gulp](docs/frontend/gulp.md)
+  - [vue](docs/frontend/vue.md)
+
+- 编程
+  - [Bash](docs/program/bash.md)
   - [PHP Extensions](docs/program/php-exts.md)
-  - [Bash](docs/components/bash.md)
+  - [PHP](docs/program/php.md)
   - [ThinkPHP](docs/program/thinkphp.md)
+  - [Laravel](docs/program/laravel.md)
+  - [Query List](docs/program/querylist.md)
   - [HTML](docs/program/html.md)
   - [HTML](docs/program/css.md)
   - [Javascript](docs/program/javascript.md)
+  - [C](docs/program/c.md)
+  - [C++](docs/program/cpp.md)
+  - [Node](docs/program/node.md)
+  - [Python](docs/program/python.md)
+  - [Java](docs/program/java.md)
+  - [Markdown](docs/program/markdown.md)
 
 - 工具
+  - [acme](docs/tools/acme.md)
   - [Adblock](docs/tools/adblock.md)
   - [Composer](docs/tools/composer.md)
   - [Crontab](docs/tools/crontab.md)
@@ -43,6 +72,7 @@
   - [Grub](docs/tools/grub.md)
   - [GCC](docs/tools/gcc.md)
   - [Git](docs/tools/git.md)
+  - [Gitea](docs/tools/gitea.md)
   - [Gnupg](docs/tools/gnupg.md)
   - [Homebrew](docs/tools/brew.md)
   - [KDE](docs/tools/kde.md)
@@ -70,3 +100,5 @@
   - [Alpine](docs/os/alpine.md)
   - [Deepin](docs/os/deepin.md)
   - [macOS](docs/os/macos.md)
+  - [Kali](docs/os/kali.md)
+  - [Debian](docs/os/debian.md)

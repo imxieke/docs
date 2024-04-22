@@ -33,6 +33,7 @@ https://dns.google/resolve? – JSON API (GET)
 - https://mozilla.cloudflare-dns.com/dns-query
 - https://1.1.1.1/dns-query
 - https://tor.cloudflare-dns.com 仅 Tor 可以用
+- https://security.cloudflare-dns.com/dns-query 屏蔽内容
 
 ## [Google](https://developers.google.com/speed/public-dns?hl=zh-cn) (被污染)
 - 8.8.8.8
@@ -112,7 +113,7 @@ https://dns.google/resolve? – JSON API (GET)
   - 208.67.222.123
   - 208.67.220.123
   - 2620:119:35::123
-  - 2620:119:53::123 
+  - 2620:119:53::123
 - DOH
   - doh.opendns.com
   - doh.familyshield.opendns.com 屏蔽成人内容
