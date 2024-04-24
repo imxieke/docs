@@ -50,6 +50,9 @@ git push origin --all --force
 --pretty 使用其他格式显示历史提交信息。可用的选项包括 oneline，short，full，fuller 和 format（后跟指定格式）。
 ```
 
+## 忽略文件权限
+`git config core.filemode false`
+
 ## 从历史记录中删除文件
 ```
 git rm --cached filename

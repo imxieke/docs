@@ -43,6 +43,7 @@
   - [vue](docs/frontend/vue.md)
 
 - 编程
+  - [开发规范](docs/tools/dev-specifications.md)
   - [Bash](docs/program/bash.md)
   - [PHP Extensions](docs/program/php-exts.md)
   - [PHP](docs/program/php.md)
