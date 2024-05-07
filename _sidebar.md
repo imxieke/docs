@@ -3,6 +3,7 @@
 
 - Awesome
   - [个人习惯](docs/awesome/person.md)
+  - [软件](docs/awesome/software.md)
   - [AI Chat GUI](docs/awesome/chat-ui.md)
   - [macOS](docs/awesome/macos.md)
   - [Linux](docs/awesome/linux.md)
@@ -63,6 +64,7 @@
 - 工具
   - [acme](docs/tools/acme.md)
   - [Adblock](docs/tools/adblock.md)
+  - [bbr](docs/tools/bbr.md)
   - [Composer](docs/tools/composer.md)
   - [Crontab](docs/tools/crontab.md)
   - [公共 DNS](docs/tools/dns.md)
@@ -97,6 +99,7 @@
   - [zsh](docs/tools/zsh.md)
 
 - 操作系统
+  - [Linux](docs/os/linux.md)
   - [Ubuntu](docs/os/ubuntu.md)
   - [Alpine](docs/os/alpine.md)
   - [Deepin](docs/os/deepin.md)

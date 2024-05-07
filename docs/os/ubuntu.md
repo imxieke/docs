@@ -1,3 +1,5 @@
+# Ubuntu
+
 ## 禁用 ipv6
 /etc/sysctl.conf
 ```
