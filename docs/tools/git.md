@@ -503,6 +503,17 @@ git merge upstream/master
 - git filter-branch --index-filter 'git rm --cached --ignore-unmatch filename '
 - git filter-branch --force --index-filter "git rm --cached --ignore-unmatch $@" --prune-empty --tag-name-filter cat -- --all
 
+## 查找大文件 or git-large-file
+```bash
+git rev-list --objects --all | grep "$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -20 | awk '{print$1}')"
+```
+
+## 从所有历史文件中删除文件
+
+```bash
+git filter-branch --force --index-filter 'git rm -rf --cached --ignore-unmatch xxx.js' --prune-empty --tag-name-filter cat -- --all
+git push origin --force --all
+```
 
 ## 强制覆盖 请勿用于生产环境
 ```
