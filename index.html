@@ -21,7 +21,7 @@
 			// logo: '/_assets/svg/rocket.svg',
       homepage: 'README.md',
       // repo: 'imxieke/docs',
-      loadSidebar: './_sidebar.md',
+      loadSidebar: '/_sidebar.md',
       // loadNavbar: '/sidebar.md',
 			coverpage: true,
 			subMaxLevel: 3,
@@ -29,6 +29,9 @@
 			maxLevel: 4,
 			auto2top: true,
       search: 'auto',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
       count: {
         countable: true,
         fontsize: '0.9em',

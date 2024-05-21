@@ -7,12 +7,6 @@ https://mirrors.cloud.tencent.com/composer/ mirrors.tencentyun.com(内网)
 https://mirrors.aliyun.com/composer/
 ```
 
-### Documents
-
-### Spout
-- https://github.com/box/spout
-> Read and write spreadsheet files (CSV, XLSX and ODS), in a fast and scalable way
-
 ### Template
 - https://github.com/smarty-php/smarty
 > a template engine for PHP, facilitating the separation of presentation (HTML/CSS) from application logic.
