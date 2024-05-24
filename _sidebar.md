@@ -31,7 +31,12 @@
   - [远程](docs/awesome/remote.md)
   - [源码推荐](docs/awesome/code.md)
   - [短网址](docs/awesome/shorturl.md)
+  - [虚拟机](docs/awesome/virtual-machine.md)
+  - [游戏](docs/awesome/game.md)
   - [安全](docs/awesome/security.md)
+  - [PHP 框架](docs/awesome/php-framework.md)
+  - [Web](docs/awesome/web.md)
+  - [操作系统](docs/awesome/os.md)
 
 - Web
   - [Nginx](docs/web/nginx.md)
@@ -99,10 +104,11 @@
   - [zsh](docs/tools/zsh.md)
 
 - 操作系统
-  - [Linux](docs/os/linux.md)
-  - [Ubuntu](docs/os/ubuntu.md)
   - [Alpine](docs/os/alpine.md)
-  - [Deepin](docs/os/deepin.md)
-  - [macOS](docs/os/macos.md)
-  - [Kali](docs/os/kali.md)
   - [Debian](docs/os/debian.md)
+  - [Deepin](docs/os/deepin.md)
+  - [Hackintosh](docs/os/hackintosh.md)
+  - [Kali](docs/os/kali.md)
+  - [Linux](docs/os/linux.md)
+  - [macOS](docs/os/macos.md)
+  - [Ubuntu](docs/os/ubuntu.md)

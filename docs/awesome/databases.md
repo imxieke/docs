@@ -1,4 +1,25 @@
-## 数据库
+# 数据库
+
+## Client
+
+## dbgate
+- Database manager for MySQL, PostgreSQL, SQL Server, MongoDB, SQLite Redis Oracle Amazon Redshift CockroachDB. Runs under Windows, Linux, Mac or as web application
+- https://github.com/dbgate/dbgate
+
+## dbeaver
+- Free universal database tool and SQL client
+- Support: MySQL/MariaDB, PostgreSQL, Greenplum, Oracle, IBM Db2, Exasol, SQL Server, Sybase/SAP ASE, SQLite, Firebird, H2, HSQLDB, Derby, Teradata, Vertica, Netezza, Informix, etc.
+- https://github.com/dbeaver/dbeaver
+
+## Medis
+- 💻 Medis is a beautiful, easy-to-use Mac database management application for Redis.
+- https://github.com/luin/medis
+
+## MDB Tools
+- MDB Tools - Read Access databases on *nix
+- https://github.com/mdbtools/mdbtools
+
+## Server
 
 ## 关系数据库(Relational Database Management System RDBMS)
 
@@ -31,6 +52,10 @@
 - https://github.com/sqlite/sqlite
 > 嵌入式轻量级开源数据库,不适合用于做并发项目
 
+## dqlite
+- https://github.com/canonical/dqlite
+- Embeddable, replicated and fault-tolerant SQL engine.
+
 ### OceanBase
 - https://open.oceanbase.com
 - https://github.com/oceanbase/oceanbase
@@ -43,13 +68,20 @@
 - https://pingcap.com
 - an open-source, cloud-native, distributed, MySQL-Compatible database for elastic scale and real-time analytics.
 
+## Go Mysql Server
+- A MySQL-compatible relational database with a storage agnostic query engine. Implemented in pure Go.
+- https://github.com/dolthub/go-mysql-server
+
 ## 时间序列数据库(time series database)
 ### InfluxDB (Rust)
 - https://www.influxdata.com/home
 - https://github.com/influxdata/influxdb
 > #### 专注于海量时序数据的高性能读、高性能写、高效存储与实时分析等
-> 
 > 一个开源的时间序列数据库开发的公司射影数据。它用于存储和检索时间序列数据，如操作监控、应用度量、物联网传感器数据和实时分析等领域。它还支持处理来自 Graphite 的数据。
+
+## TDengine
+- https://github.com/taosdata/TDengine
+- TDengine is an open source, high-performance, cloud native time-series database optimized for Internet of Things (IoT), Connected Cars, Industrial IoT and DevOps.
 
 ## 面向文档的数据库(document-oriented database)
 ### CouchDB (Erlang)
@@ -62,6 +94,11 @@
 - https://github.com/mongodb/mongo
 - 一个基于分布式文件存储的开源数据库系统。
 - 适用于实时的插入、更新与查询的需求，并具备应用程序实时数据存储所需的复制及高度伸缩性
+
+## NOSQL
+### DragonFlyDB
+- https://github.com/dragonflydb/dragonfly
+- A modern replacement for Redis and Memcached
 
 ## 键值对存储数据库 (Key-Value)
 ### LevelDB (C++)
@@ -98,3 +135,38 @@
 - https://www.cockroachlabs.com
 - https://github.com/cockroachdb/cockroach
 - 云原生分布式 SQL 数据库，旨在构建、扩展和管理现代数据密集型应用程序。
+
+# BlockChain
+## IceFireLabs
+- https://github.com/IceFireDB/IceFireDB 
+- IceFireDB is a database built for web3.0 It strives to fill the gap between web2 and web3.0 with a friendly database experience, making web3 application data storage more convenient…
+
+## orbitdb
+- https://github.com/orbitdb/orbitdb
+- Peer-to-Peer Databases for the Decentralized Web
+
+## immudb
+- https://github.com/codenotary/immudb
+- immutable database based on zero trust, SQL/Key-Value/Document model, tamperproof, data change history
+
+# AI 
+
+## qdrant
+- https://github.com/qdrant/qdrant
+- Qdrant - High-performance, massive-scale Vector Database for the next generation of AI.
+
+## superduperdb
+- https://github.com/SuperDuperDB/superduperdb
+- 🔮 SuperDuperDB: Bring AI to your database! Build, deploy and manage any AI application directly with your existing data infrastructure, without moving your data. Including streaming inference, scalable model training and vector search.
+
+## SeekDB
+- Pure PHP NoSQL database with no dependency. Flat file, JSON based document database.
+- https://github.com/SleekDB/SleekDB
+
+
+- https://github.com/nutsdb/nutsdb
+- https://github.com/FerretDB/FerretDB
+- https://github.com/drawdb-io/drawdb
+- https://github.com/rqlite/rqlite
+- https://github.com/duckdb/duckdb
+- https://github.com/Tencent/wcdb
