@@ -172,7 +172,7 @@ alter table user add unique index(user_id,user_name);
 <meta name="keywords" content="XX_XX_XXX"/>
 在百度上搜索了一下，看到了一篇详细介绍如下：
 
- META标签是HTML语言HEAD区的一个辅助性标签，它位于HTML文档头部的<HEAD>标记和<TITLE>标记之间，它提供用户不可见的信息。meta标签通常用来为搜索引擎robots定义页面主题，或者是定义用户浏览器上的cookie；它可以用于鉴别作者，设定页面格式，标注内容提要和关键字；还可以设置页面使其可以根据你定义的时间间隔刷新自己,以及设置RASC内容等级，等等。
+ META标签是HTML语言HEAD区的一个辅助性标签，它位于HTML文档头部的`<HEAD>`标记和`<TITLE>`标记之间，它提供用户不可见的信息。meta标签通常用来为搜索引擎robots定义页面主题，或者是定义用户浏览器上的cookie；它可以用于鉴别作者，设定页面格式，标注内容提要和关键字；还可以设置页面使其可以根据你定义的时间间隔刷新自己,以及设置RASC内容等级，等等。
 
 　　name是描述网页的，对应于Content（网页内容），以便于搜索引擎机器人查找、分类（目前几乎所有的搜索引擎都使用网上机器人自动查找meta值来给网页分类）。
 　　name的value值（name=""）指定所提供信息的类型。有些值是已经定义好的。例如description(说明)、keyword(关键字)、refresh(刷新)等。还可以指定其他任意值，如：creationdate(创建日期) 、
@@ -309,3 +309,11 @@ close PDO Connection:
     mysqli_close($connect);     //instance
     $connect = null;            //PDO
 }
+
+## 数据恢复
+
+```shell
+# must be root user
+mysqlbinlog --start-datetime="2020-03-20 10:00:00" --stop-datetime="2024-05-27 10:54:00" mysql-bin.000001 | mysql -uroot -p demo
+
+```

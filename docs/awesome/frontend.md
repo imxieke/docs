@@ -10,6 +10,10 @@
 - https://github.com/d3
 - The JavaScript library for bespoke data visualization
 
+### vis-graph3d
+- https://github.com/visjs/vis-graph3d
+- 📊 Create interactive, animated 3d graphs. Surfaces, lines, dots and block styling out of the box.
+
 ### TypeScript
 - https://github.com/microsoft/TypeScript
 > TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
