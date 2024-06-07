@@ -1,18 +1,38 @@
 # Shell
 
 文件表达式
--e filename 如果 filename存在，则为真
--d filename 如果 filename为目录，则为真
--f filename 如果 filename为常规文件，则为真
--L filename 如果 filename为符号链接，则为真
--r filename 如果 filename可读，则为真
--w filename 如果 filename可写，则为真
--x filename 如果 filename可执行，则为真
--s filename 如果文件长度不为0，则为真
--h filename 如果文件是软链接，则为真
+```
 filename1 -nt filename2 如果 filename1比 filename2新，则为真。
 filename1 -ot filename2 如果 filename1比 filename2旧，则为真。
+```
 
+
+```
+-a file exists.
+-b file exists and is a block special file.
+-c file exists and is a character special file.
+-d file exists and is a directory.
+-e file exists (just the same as -a).
+-f file exists and is a regular file.
+-g file exists and has its setgid(2) bit set.
+-G file exists and has the same group ID as this process.
+-k file exists and has its sticky bit set.
+-L file exists and is a symbolic link.
+-n string length is not zero.
+-o Named option is set on.
+-O file exists and is owned by the user ID of this process.
+-p file exists and is a first in, first out (FIFO) special file or
+named pipe.
+-r file exists and is readable by the current process.
+-s file exists and has a size greater than zero.
+-S file exists and is a socket.
+-t file descriptor number fildes is open and associated with a
+terminal device.
+-u file exists and has its setuid(2) bit set.
+-w file exists and is writable by the current process.
+-x file exists and is executable by the current process.
+-z string length is zero.
+```
 
 整数变量表达式
 -eq 等于
@@ -43,21 +63,6 @@ if [ 表达式1  –a  表达式2 ]
 
     逻辑或 -o                   条件表达式的或
 if [ 表达式1  –o 表达式2 ]
-
-### if
-if [ -f  file ]    			如果文件存在
-if [ -d ...   ]    			如果目录存在
-if [ -s file  ]    			如果文件存在且非空
-if [ -r file  ]    			如果文件存在且可读
-if [ -w file  ]   			如果文件存在且可写
-if [ -x file  ]    			如果文件存在且可执行
-if [-z string ]    			string 的长度为零
-if [ int1 -eq int2 ]    	如果int1等于int2
-if [ int1 -ne int2 ]    	如果不等于
-if [ int1 -ge int2 ]       	如果>=
-if [ int1 -gt int2 ]       	如果>
-if [ int1 -le int2 ]       	如果<=
-if [ int1 -lt int2 ]       	如果<
 
 变量说明:
 $$ Shell本身的PID（ProcessID）
