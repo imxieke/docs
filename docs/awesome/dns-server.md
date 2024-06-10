@@ -43,3 +43,7 @@
 ## DNSCrypt DOH Server (Rust)
 - https://github.com/DNSCrypt/doh-server
 - A fast and secure DoH (DNS-over-HTTPS) and ODoH (Oblivious DoH) server.
+
+## Route DNS
+- https://github.com/folbricht/routedns
+- DNS stub resolver, proxy and router with support for DoT, DoH, DoQ, and DTLS

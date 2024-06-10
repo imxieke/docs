@@ -51,8 +51,16 @@
 - https://github.com/pandao/editor.md
 - https://github.com/benweet/stackedit
 - https://github.com/Milkdown/milkdown
+
+## VDitor
 - https://github.com/Vanessa219/vditor
+- ♏ 一款浏览器端的 Markdown 编辑器，支持所见即所得（富文本）、即时渲染（类似 Typora）和分屏预览模式。
+
+## Abricotine
 - https://github.com/brrd/abricotine
+- Markdown editor with inline preview
+
+
 - https://github.com/egoist/eme
 - https://github.com/tylingsoft/markdown-plus
 - https://github.com/hinesboy/mavonEditor
