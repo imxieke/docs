@@ -535,3 +535,20 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 npm config delete proxy
 ```
+
+
+
+
+## 使用 `Gnupg` 签名
+
+### 导出公钥添加至 Github 账户或其他平台账户
+`gpg --armor --export 4AEA00A342C24CA3`
+
+### 仓库配对
+`git config --global user.signingkey 4AEA00A342C24CA3`
+
+### Commit
+`git commit -S -m "your_commit_message"`
+
+### 不想每次都要输入 -S 命令, 则设置 Git 自动为 commit 签名
+`git config --global commit.gpgsign true`
