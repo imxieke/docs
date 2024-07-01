@@ -73,3 +73,10 @@ generateResolvConf = false
 default = DemoUser
 
 ```
+
+
+## 空间内存自动回收
+
+```
+wsl --manage debian --set-sparse true
+```
