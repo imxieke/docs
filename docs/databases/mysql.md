@@ -348,6 +348,9 @@ mysqlbinlog --start-datetime="2020-03-20 10:00:00" --stop-datetime="2024-05-27 1
 - unsigned 是(自己算吧)
 - 最大值 `bigint(20)`
 
+### float 2^128
+### double 2^1024
+
 ## 快捷预览
 
 |类型|最小值(有符号/无符号)|最大值(有符号/无符号)|字节|
