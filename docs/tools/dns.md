@@ -54,36 +54,45 @@ https://dns.google/resolve? – JSON API (GET)
   - 2001:4860:4860:0:0:0:0:6464
 
 ## [阿里 DNS](https://www.alidns.com)
-- 223.5.5.5
-- 223.6.6.6
-- 2400:3200::1
-- 2400:3200:baba::1
-- DOH
+### IPV4
+  - 223.5.5.5
+  - 223.6.6.6
+### IPV6
+  - 2400:3200::1
+  - 2400:3200:baba::1
+### DOH
   - https://dns.alidns.com/dns-query
   - https://223.5.5.5/dns-query
   - https://223.6.6.6/dns-query
-- DOH JSON
+### DOH JSON
   - https://dns.alidns.com/resolve
   - https://223.5.5.5/resolve
   - https://223.6.6.6/resolve
 
 ## [DNSPod](https://www.dnspod.cn/products/publicdns)
-- 119.29.29.29
-- 119.28.28.28
-- 182.254.116.116
-- 2402:4e00::
-- 2402:4e00:1::
-- DOH
+### IPV4
+  - 119.29.29.29
+  - 119.28.28.28
+  - 182.254.116.116
+### IPV6
+  - 2402:4e00::
+  - 2402:4e00:1::
+### DOH
   - https://doh.pub/dns-query
   - https://1.12.12.12/dns-query
   - https://120.53.53.53/dns-query
-- DOH 国密
+### DOH 国密
   - https://sm2.doh.pub/dns-query
-- https://doh.pub
-- DOT
+  - https://doh.pub
+### DOT
   - dot.pub
   - 1.12.12.12
   - 120.53.53.53
+
+## 字节跳动
+### IPV4
+  - 180.184.1.1
+  - 180.184.2.2
 
 ## [IBM](https://www.quad9.net)
 - Standard
@@ -133,10 +142,13 @@ https://dns.google/resolve? – JSON API (GET)
 - 中国联通
   - 123.125.81.6
   - 140.207.198.6
-- DOH
+### DOH
   - https://doh.360.cn/dns-query RFC8484
   - https://doh.360.cn/query? json
-- DOT
+  - https://doh.360.cn/resolve?
+### DOH RFC8484
+  - https://doh.360.cn/dns-query
+### DOT
   - dot.360.cn
 
 ## [百度](https://dudns.baidu.com)
