@@ -536,8 +536,13 @@ git config --global --unset https.proxy
 npm config delete proxy
 ```
 
+## 修改 sql_mode
 
+### 查看现在的 sql_mode
+`SELECT @@sql_mode;`
 
+### 修改全局生效(root)
+`SET @@global.sql_mode ='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';`
 
 ## 使用 `Gnupg` 签名
 
