@@ -497,6 +497,7 @@ git merge upstream/master
 - git reflog expire --expire=now --all
 - 通过运行垃圾回收器和删除旧的对象重新打包仓库。
 - git gc --prune=now
+- git gc --aggressive --prune=now
 - 从历史记录删除文件
 - git log --pretty=oneline --branches -- filename
 - filter-branch 命令重写所有 commit 将文件从 Git 历史中完全移除
