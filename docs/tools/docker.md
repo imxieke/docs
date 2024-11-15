@@ -1,7 +1,15 @@
 # Docker
 
+# 设置代理
 
-## Dockerd
+## dockerd (docker pull 等用途)
+
+### 创建配置文件
+```shell
+sudo mkdir -p /etc/systemd/system/docker.service.d
+sudo touch /etc/systemd/system/docker.service.d/proxy.conf
+```
+
 ```conf
 [Service]
 Environment="HTTP_PROXY=http://192.168.13.189:7890"
@@ -9,8 +17,19 @@ Environment="HTTPS_PROXY=http://192.168.13.189:7890"
 Environment="NO_PROXY=localhost,127.0.0.1,.example.com"
 ```
 
-## Container
-## ~/.docker/config.json
+
+### 重启后生效
+```shell
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
+## Container代理 运行容器时使用 (Docker > 17.07)
+## 创建配置文件
+```shell
+mkdir -p ~/.docker
+touch ~/.docker/config.json
+```
 
 ```json
 {
@@ -25,7 +44,7 @@ Environment="NO_PROXY=localhost,127.0.0.1,.example.com"
  }
 ```
 
-## Build
+## Build 构建镜像代理
 ``` bash
 docker build . \
     --build-arg "HTTP_PROXY=http://proxy.example.com:8080/" \
@@ -39,13 +58,15 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 
-## Set Mirrors
+## docker pull 拉去镜像时的镜像
 ### 检查 `docker.service` 是否已经配置
+
 `systemctl cat docker | grep '\--registry-mirror'`
 
-使用下面命令编辑配置文件
+### 使用下面命令编辑配置文件
 `nvim /etc/docker/daemon.json`
 
+### 配置文件内容
 ``` json
 {
   "registry-mirrors": [
@@ -59,20 +80,6 @@ sudo systemctl restart docker
 
 `sudo systemctl restart docker`
 
-## Config Proxy
-```shell
-mkdir -p /etc/systemd/system/docker.service.d
-nvim /etc/systemd/system/docker.service.d/proxy.conf
-[Service]
-Environment="HTTP_PROXY=http://192.168.2.147:7890"
-Environment="HTTPS_PROXY=http://192.168.2.147:7890"
-Environment="NO_PROXY="localhost,127.0.0.1,::1"
-
-## 重启后生效
-sudo systemctl daemon-reload
-sudo systemctl restart docker
-```
-
 ## 非 `root` 用户运行
 ```
 将当前用户添加到 docker 组
@@ -83,7 +90,7 @@ newgrp - docker
 
 ## Third Registry
 - Tencent
-    - hkccr.ccs.tencentyun.com 891788135:ke19960318
+    - hkccr.ccs.tencentyun.com
 
 ##  Search Third Registry
 docker search registry.access.redhat.com/rhel rhel 是镜像名称
