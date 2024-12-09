@@ -34,7 +34,6 @@
   - [虚拟机](docs/awesome/virtual-machine.md)
   - [游戏](docs/awesome/game.md)
   - [安全](docs/awesome/security.md)
-  - [PHP 框架](docs/awesome/php-framework.md)
   - [Web](docs/awesome/web.md)
   - [操作系统](docs/awesome/os.md)
 
