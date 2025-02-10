@@ -84,6 +84,7 @@
   - [Homebrew](docs/tools/brew.md)
   - [KDE](docs/tools/kde.md)
   - [Markdown 语法](docs/tools/markdown-syntax.md)
+  - [Ollama](docs/tools/ollama.md)
   - [OpenSSL](docs/tools/openssl.md)
   - [Podman](docs/tools/podman.md)
   - [Proxy](docs/tools/proxy-client.md)
