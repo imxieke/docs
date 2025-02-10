@@ -20,10 +20,6 @@ mkdir -p /etc/systemd/system/ollama.service.d
 touch /etc/systemd/system/ollama.service.d/override.conf
 
 [Service]
-# ExecStart=/usr/bin/ollama serve
-# WorkingDirectory=/var/lib/ollama
-# Environment="HOME=/var/lib/ollama"
-# Environment="OLLAMA_MODELS=/var/lib/ollama"
 Environment="http_proxy=http://192.168.12.168:7890"
 Environment="https_proxy=http://192.168.12.168:7890"
 
