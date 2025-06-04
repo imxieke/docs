@@ -1,0 +1,11 @@
+## Mirrors
+- https://pypi.org/simple
+- https://mirrors.ustc.edu.cn/pypi/simple
+- https://mirrors.bfsu.edu.cn/pypi
+- https://pypi.tuna.tsinghua.edu.cn/simple
+- https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+- https://mirrors.aliyun.com/pypi/simple
+- http://mirrors.cloud.tencent.com/pypi/simple
+- https://mirrors.huaweicloud.com/repository/pypi/simple
+- https://mirror.nju.edu.cn/pypi/web/simple
+- https://mirrors.zju.edu.cn/pypi/web/simple

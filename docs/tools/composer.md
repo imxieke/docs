@@ -1,11 +1,17 @@
 ## Composer 使用文档
 
 ### Mirrors list
-```
-https://mirrors.huaweicloud.com/repository/php/
-https://mirrors.cloud.tencent.com/composer/ mirrors.tencentyun.com(内网)
-https://mirrors.aliyun.com/composer/
-```
+
+- https://repo.packagist.org
+- https://mirrors.huaweicloud.com/repository/php/
+- https://repo.huaweicloud.com/repository/php/
+- https://mirrors.cloud.tencent.com/composer/
+- https://mirrors.tencent.com/composer/
+- https://mirrors.aliyun.com/composer/
+- https://packagist.mirrors.sjtug.sjtu.edu.cn
+- https://packagist.pages.dev
+- https://packagist.phpcomposer.com
+
 
 ### Template
 - https://github.com/smarty-php/smarty

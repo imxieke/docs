@@ -53,13 +53,6 @@ git push origin --all --force
 ## 忽略文件权限
 `git config core.filemode false`
 
-## 从历史记录中删除文件
-```
-git rm --cached filename
-git commit --amend -AHEAD
-```
-
-
 #### Fork仓库同步
 从源代码仓库Fork一份后，希望Fork能与源项目更新保持一致，又保留我们自己的修改
 
@@ -509,6 +502,12 @@ git merge upstream/master
 git rev-list --objects --all | grep "$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -20 | awk '{print$1}')"
 ```
 
+## 从历史记录中删除文件
+```
+git rm --cached filename
+git commit --amend -AHEAD
+```
+
 ## 从所有历史文件中删除文件
 
 ```bash
@@ -536,11 +535,6 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 npm config delete proxy
 ```
-
-## 修改 sql_mode
-
-### 查看现在的 sql_mode
-`SELECT @@sql_mode;`
 
 ### 修改全局生效(root)
 `SET @@global.sql_mode ='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';`
