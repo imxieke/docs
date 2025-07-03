@@ -367,3 +367,26 @@ mysqlbinlog --start-datetime="2020-03-20 10:00:00" --stop-datetime="2024-05-27 1
 
 ### 查看现在的 sql_mode
 `SELECT @@sql_mode;`
+
+
+
+## MYSQL 自增 ID 重置
+`ALTER TABLE table_name AUTO_INCREMENT = 1;`
+
+
+## 字符集
+- utf8mb4 是 utf8(utf8mb3) 的超集, 完全兼容它
+
+- `utf8mb4_general_cs`
+- `utf8mb4_unicode_ci`
+  - 存储超出 utf8mb3 范围的字符，如某些不常用的汉字和新增的 Unicode 字符。
+  - 存储 emoji 表情，这些表情需要四字节的编码。
+  - 确保数据库能够支持国际化应用，处理各种语言和特殊字符 。
+
+- `utf8mb4_0900_ai_ci`
+
+
+### 字段说明
+- `ai` 指的是口音不敏感。也就是说，排序时 `e，è，é，ê` 和 `ë` 之间没有区别
+- `ci case insensitiv` 表示不区分大小写。也就是说，排序时 `p` 和 `P` 之间没有区别
+- `cs case sensitive` 的缩写，即大小写敏感。[mysql 5.7 之后取消了这个]
