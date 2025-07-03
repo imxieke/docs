@@ -1,5 +1,13 @@
 ## Composer 使用文档
 
+## 下载
+
+- `wget https://mirrors.tencent.com/composer/composer.phar`
+- `wget https://getcomposer.org/download/latest-stable/composer.phar`
+
+### PHP `5.3-7.2`
+- `wget https://getcomposer.org/download/latest-2.2.x/composer.phar`
+
 ### Mirrors list
 
 - https://repo.packagist.org
