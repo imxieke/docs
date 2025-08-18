@@ -115,3 +115,4 @@
   - [Linux](docs/os/linux.md)
   - [macOS](docs/os/macos.md)
   - [Ubuntu](docs/os/ubuntu.md)
+  - [Windows](docs/os/windows.md)
