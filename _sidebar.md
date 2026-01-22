@@ -1,6 +1,9 @@
 - 入门
   - [快速开始](README.md)
 
+- AI
+  - [开源大模型](docs/ai/opensource_models.md)
+
 - Awesome
   - [个人习惯](docs/awesome/person.md)
   - [软件](docs/awesome/software.md)
@@ -37,13 +40,15 @@
   - [Web](docs/awesome/web.md)
   - [操作系统](docs/awesome/os.md)
 
+
+
 - Web
   - [Nginx](docs/web/nginx.md)
 
-- 数据库
+- **数据库**
   - [MYSQL](docs/databases/mysql.md)
 
-- 前端
+- **前端**
   - [Gulp](docs/frontend/gulp.md)
   - [vue](docs/frontend/vue.md)
 

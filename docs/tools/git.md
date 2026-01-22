@@ -7,7 +7,7 @@
 
 ## 常用命令
 ```shell
-git add
+git **add**
 git commit -m "commit log"
 git push -u origin <branch example:master>
 git status
