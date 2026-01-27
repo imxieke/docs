@@ -36,3 +36,16 @@
 |%USERNAME% | 返回当前登录的用户的名称。
 |%UserPrefix% | 返回当前用户的配置文件的位置。
 |%WINDIR% | 返回操作系统目录的位置。
+
+
+## 压缩镜像
+
+```pwsh
+# 若为 WSL则需关闭所有 WSL
+wsl --shutdown
+select vdisk file="C:\path\to\ext4.vhdx"
+attach vdisk readonly
+compact vdisk
+detach vdisk
+exit
+```
