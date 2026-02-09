@@ -27,3 +27,18 @@ wget -O /usr/share/keyrings/php.gpg https://packages.sury.org/php/apt.gpg
 echo "deb [signed-by=/usr/share/keyrings/php.gpg] https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list
 
 ```
+
+## 12 升 13
+
+```
+apt update
+apt upgrade -y
+apt full-upgrade -y
+apt autoclean
+apt autoremove -y
+
+# 执行完成后重新执行上面的命令
+sed -i 's/bookworm/trixie/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.{list,sources} 2>/dev/null
+
+
+```
